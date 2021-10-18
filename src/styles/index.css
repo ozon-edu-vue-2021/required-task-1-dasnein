@@ -9,7 +9,7 @@ body {
 img {
     width: 100%;
     max-width: 100%;
-    display: bloсk;
+    display: block;
 }
 
 a {
@@ -56,6 +56,8 @@ main {
     padding: 10px 20px;
     border-radius: 6px;
     margin: 10px 0;
+    width: 240px;
+    align-self: center;
 }
 
 .action:hover {
@@ -126,23 +128,24 @@ figcaption {
     bottom: 0;
     right: 0;
     background-color: rgba(33, 33, 33, 0.5);
-    z-index: -1;
+    z-index: 9;
 }
 
 .popup.open {
     visibility: visible;
 }
 
-.action {
+.popup .action {
     position: absolute;
     top: 50px;
-    right: 50px;
+    right: 25px;
     background-color: transparent;
     line-height: 0;
     font-size: 50px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    padding: 0;
 }
 
 .popup .content {
@@ -157,4 +160,5 @@ figcaption {
 
 .popup .link {
     display: inline;
+    background-color: transparent;
 }
